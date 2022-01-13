@@ -580,7 +580,7 @@ Here are the course summary as its given on the course [link](https://www.course
     ![](Images/43.png)
 
 #### GloVe word vectors
-- GloVe is another algorithm for learning the word embedding. It's the simplest of them.
+- GloVe is another algorithm for learning the word embedding. It's the simplest of all the algorithms we have seen so far.
 - This is not used as much as word2vec or skip-gram models, but it has some enthusiasts because of its simplicity.
 - GloVe stands for Global vectors for word representation.
 - Let's use our previous example: "I want a glass of orange juice to go along with my cereal".
