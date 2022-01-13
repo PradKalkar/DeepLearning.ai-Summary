@@ -531,7 +531,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - We want to learn `c` to `t`
   - We get e<sub>c</sub> by `E`. o<sub>c</sub>
   - We then use a softmax layer to get `P(t|c)` which is y&#770;
-  - Also we will use the cross-entropy loss function.
+  - Also we will use the categorical cross-entropy loss function.
   - This model is called skip-grams model.
 - The last model has a problem with the softmax layer:   
   ![](Images/39.png)
@@ -544,7 +544,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - One way is to choose the context by random from your corpus.
   - If you have done it that way, there will be frequent words like "the, of, a, and, to, .." that can dominate other words like "orange, apple, durian,..."
   - In practice, we don't take the context uniformly random, instead there are some heuristics to balance the common words and the non-common words.
-- word2vec paper includes 2 ideas of learning word embeddings. One is skip-gram model and another is CBoW (continuous bag-of-words).
+- word2vec paper(by Google Inc.) includes 2 ideas of learning word embeddings. One is skip-gram model and another is CBoW (continuous bag-of-words).
 
 #### Negative Sampling
 - Negative sampling allows you to do something similar to the skip-gram model, but with a much more efficient learning algorithm. We will create a different learning problem.
