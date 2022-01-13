@@ -551,13 +551,13 @@ Here are the course summary as its given on the course [link](https://www.course
 - Given this example:
   - "I want a glass of orange juice to go along with my cereal"
 - The sampling will look like this:
-- | Context | Word  | target |
-  | ------- | ----- | ------ |
-  | orange  | juice | 1      |
-  | orange  | king  | 0      |
-  | orange  | book  | 0      |
-  | orange  | the   | 0      |
-  | orange  | of    | 0      |
+- | Context | Word  | is target? |
+  | ------- | ----- |   ------   |
+  | orange  | juice |     1      |
+  | orange  | king  |     0      |
+  | orange  | book  |     0      |
+  | orange  | the   |     0      |
+  | orange  | of    |     0      |
 
   We get positive example by using the same skip-grams technique, with a fixed window that goes around.
 - To generate a negative example, we pick a word randomly from the vocabulary.
@@ -565,7 +565,7 @@ Here are the course summary as its given on the course [link](https://www.course
 - So the steps to generate the samples are:
   1. Pick a positive context
   2. Pick a k negative contexts from the dictionary.
-- k is recommended to be from 5 to 20 in small datasets. For larger ones - 2 to 5.
+- k is recommended to be from 5 to 20 in small datasets. For larger ones - k is recommended to be from 2 to 5.
 - We will have a ratio of k negative examples to 1 positive ones in the data we are collecting.
 - Now let's define the model that will learn this supervised learning problem:
   - Lets say that the context word are `c` and the word are `t` and `y` is the target.
