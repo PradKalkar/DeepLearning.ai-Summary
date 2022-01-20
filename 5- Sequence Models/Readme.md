@@ -728,7 +728,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - And to do that we multiply:   
     P(y<sup>\<1></sup> | x) * P(y<sup>\<2></sup> | x, y<sup>\<1></sup>) * ... * P(y<sup>\<t></sup> | x, y<sup>\<y(t-1)></sup>)
   - Each probability is a fraction, most of the time a small fraction.
-  - Multiplying small fractions will cause a **numerical overflow**. Meaning that it's too small for the floating part representation in your computer to store accurately.
+  - Multiplying small fractions will cause a **numerical underflow**. Meaning that it's too small for the floating part representation in your computer to store accurately.
   - So in practice we use **summing logs of probabilities** instead of multiplying directly.   
     ![](Images/57.png)
   - But there's another problem. The two optimization functions we have mentioned are preferring small sequences rather than long ones. Because multiplying more fractions gives a smaller value, so fewer fractions - bigger result.
