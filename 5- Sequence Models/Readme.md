@@ -766,7 +766,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - Get counts and decide what to work on next.
 
 #### BLEU Score
-- One of the challenges of machine translation, is that given a sentence in a language there are one or more possible good translation in another language. So how do we evaluate our results?
+- One of the challenges of machine translation, is that given a sentence in a language there are one or more possible good translations in another language unlike image recognition where there is only one correct answer. So how do we evaluate our results?
 - The way we do this is by using **BLEU score**. BLEU stands for _bilingual evaluation understudy_.
 - The intuition is: as long as the machine-generated translation is pretty close to any of the references provided by humans, then it will get a high BLEU score.
 - Let's take an example:
