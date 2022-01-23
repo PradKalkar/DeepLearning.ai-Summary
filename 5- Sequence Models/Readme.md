@@ -866,7 +866,7 @@ Here are the course summary as its given on the course [link](https://www.course
 - One of the most exciting developments using sequence-to-sequence models has been the rise of very accurate speech recognition.
 - Let's define the speech recognition problem:
   - X: audio clip
-  - Y: transcript
+  - Y: text transcript
   - If you plot an audio clip it will look like this:   
     ![](Images/75.png)
     - The horizontal axis is time while the vertical is changes in air pressure.
