@@ -904,7 +904,7 @@ Here are the course summary as its given on the course [link](https://www.course
 - For example, Alexa - a smart device made by Amazon - can answer your call "Alexa, what time is it?" and then Alexa will respond to you.
 - Trigger word detection systems include:  
   ![](Images/79.png)
-- For now, the trigger word detection literature is still evolving so there actually isn't a single universally agreed on the algorithm for trigger word detection yet. But let's discuss an algorithm that can be used.
+- For now, the trigger word detection literature is still evolving so there actually isn't a best algorithm for trigger word detection yet. But let's discuss an algorithm that can be used.
 - Let's now build a model that can solve this problem:
   - X: audio clip
   - X has been preprocessed and spectrogram features have been returned of X
@@ -914,7 +914,7 @@ Here are the course summary as its given on the course [link](https://www.course
     ![](Images/80.png)
     - The vertical lines in the audio clip represent moment just after the trigger word. The corresponding to this will be 1.
   - One disadvantage of this creates a very imbalanced training set. There will be a lot of zeros and few ones.
-  - A hack to solve this is to make an output a few ones for several times or for a fixed period of time before reverting back to zero.  
+  - A hack to solve this is to make the NN output a few ones for several times or for a fixed period of time before reverting back to zero.  
     ![](Images/81.png)  
     ![](Images/85.png)
 
